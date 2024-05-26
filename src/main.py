@@ -2,6 +2,9 @@ from selenium_utils import SeleniumUtils
 from general_utils import init_log, read_json
 
 if __name__ == "__main__":
+    """
+    Entry Point of this application
+    """
     logger = init_log()
     logger.info("Starting Application")
     logger.info("ITILITE CRON JOB VERSION 1.0")

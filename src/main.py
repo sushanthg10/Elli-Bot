@@ -11,7 +11,7 @@ if __name__ == "__main__":
     config = read_json('./credentials.json')
     try:
         seleniumUtils = SeleniumUtils()
-        seleniumUtils.capture_screenshot()
+        seleniumUtils.capture_screenshot(url = config['URL'])
         seleniumUtils.send_image(webhook=config['webhookURL'])
     except Exception as e:
         logger.error("Application failed during the process with the followin error")
